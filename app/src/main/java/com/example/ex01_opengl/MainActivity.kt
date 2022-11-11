@@ -3,14 +3,17 @@ package com.example.ex01_opengl
 import android.opengl.GLSurfaceView
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.constraintlayout.widget.ConstraintSet.Layout
 
 class MainActivity : AppCompatActivity() {
 
+	var myLayout: Layout? = null
 	var myGLView: GLSurfaceView ? = null
 
 	override fun onCreate(savedInstanceState: Bundle?) {
 		super.onCreate(savedInstanceState)
 		setContentView(R.layout.activity_main)
+
 
 		myGLView = findViewById(R.id.myGLView)
 

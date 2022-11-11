@@ -36,7 +36,7 @@ class MyGLRenderer: GLSurfaceView.Renderer {
 
 
 	override fun onSurfaceCreated(p0: GL10?, p1: EGLConfig?) {
-		GLES30.glClearColor(1f, 0.6f, 0.6f, 100f)
+		GLES30.glClearColor(1f, 0.6f, 0.6f, 1f)
 		Log.d("MyGLRenderer 여", "onSurfaceCreated")
 	}
 	// 화면크기가 변경시 화면 크기를 가져와 작업
